@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <h1><?= Html::encode($this->title) ?></h1>
             <hr>
 
-            <?php $form = ActiveForm::begin(['action'=>['user/register'],'id' => 'registration-form', 'options'=>['enctype'=>'multipart/form-data']]); ?>
+            <?php $form = ActiveForm::begin(['id' => 'registration-form', 'options'=>['enctype'=>'multipart/form-data']]); ?>
 
             <?= $form->field($model, 'name')->textInput(['autofocus' => true, 'value'=>$model->name]) ?>
             <?= $form->field($model, 'mobile')->textInput(['value'=>$model->mobile]) ?>
@@ -62,12 +62,4 @@ $this->params['breadcrumbs'][] = $this->title;
             <?php ActiveForm::end(); ?>
         </div>
     </div>
-</div>
-<div class="row">
-    <?php
-        if(isset($data)) {
-
-        }
-    ?>
-
 </div>

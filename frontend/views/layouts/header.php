@@ -19,6 +19,7 @@ $menuItems = [
     ['label' => 'Register', 'url' => ['/user/registration']],
     ['label' => 'Demo', 'url' => ['/user/demo']],
     ['label' => 'Demo2', 'url' => ['/user/demo2']],
+    ['label' => 'Grid View', 'url' => ['/first/index']],
 ];
 if (Yii::$app->user->isGuest) {
     $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];

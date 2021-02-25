@@ -1,29 +1,33 @@
 <?php
 
-
 namespace frontend\models;
 
-use yii\base\Model;
 
-class UploadCSV extends model
+use yii\db\ActiveRecord;
+
+
+class UploadCSV extends ActiveRecord
 {
-    private $file;
 
-    public function rules()
+    public $file;
+
+    public static function tableName(): string
+    {
+        return 'file';
+    }
+
+    public function rules(): array
     {
         return [
-            [['csvFile'], 'file', 'skipOnEmpty'=>false, 'extension'=>'csv'],
+            ['file', 'file', 'skipOnEmpty' => false,'extensions'=>['csv']],
         ];
     }
 
-    public function upload()
+    public function attributeLabels(): array
     {
-        if($this->validate()) {
-            $rd = rand(0, 9999999);
-            $this->file->saveAs('uploads/file/'.$rd.$this->file->baseName.'.'.$this->file->extension);
-            return true;
-        } else {
-            return false;
-        }
+        return [
+            'file'=>'Select CSV File',
+        ];
     }
+
 }

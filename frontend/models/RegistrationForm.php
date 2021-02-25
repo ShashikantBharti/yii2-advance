@@ -50,12 +50,9 @@ class RegistrationForm extends ActiveRecord
     public function attributeLabels()
     {
         return [
-            'name' => 'Your Name',
-            'mobile' => 'Your Mobile Number',
-            'email' => 'Your Email Id',
+            'mobile' => 'Mobile Number',
+            'email' => 'Email Id',
             'dob' => 'Date Of Birth',
-            'image' => 'Choose Image',
-            'password' => 'Choose Password'
         ];
     }
 

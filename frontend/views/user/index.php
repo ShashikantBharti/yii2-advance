@@ -38,7 +38,7 @@ $records = Yii::$app->cache->get('data');
                                 </td>
                                 <td>
                                     <?= Html::a('View', ['view', 'id'=>$record->id],['class'=>'btn btn-sm btn-info']); ?>
-                                    <?= Html::a('Edit', ['edit', 'id'=>$record->id],['class'=>'btn btn-sm btn-primary']); ?>
+                                    <?= Html::a('Edit', ['update', 'id'=>$record->id],['class'=>'btn btn-sm btn-primary']); ?>
                                     <?= Html::a('Delete', ['delete', 'id' => $record->id],['class'=>'btn btn-sm btn-danger']); ?>
                                 </td>
                             </tr>
