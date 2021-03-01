@@ -12,6 +12,12 @@ return [
     'bootstrap' => ['log'],
     'layout' => 'mylayout',
     'controllerNamespace' => 'frontend\controllers',
+    'modules' => [
+        'Project' => [
+            'class' => 'frontend\Modules\Project\project',
+            // ... other configurations for the module ...
+        ],
+    ],
     'components' => [
 
 

@@ -10,9 +10,11 @@ $this->title = "Grid View";
 $this->params['breadcrumbs'][] = $this->title;
 
 ?>
+
 <h1><?= Html::encode($this->title); ?></h1>
 
 <div class="grid-view">
+
     <?php
 
 //        $dataProvider = new ActiveDataProvider([
@@ -58,9 +60,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 ],
             ],
         ]);
-
         Pjax::end();
     ?>
+
 </div>
 
 

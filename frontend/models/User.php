@@ -1,6 +1,5 @@
 <?php
 
-
 namespace frontend\models;
 
 use Yii;
@@ -10,7 +9,6 @@ use yii\web\IdentityInterface;
 
 class User extends ActiveRecord implements IdentityInterface
 {
-
 
     public static function getDb()
     {

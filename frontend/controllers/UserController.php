@@ -236,6 +236,7 @@ class UserController extends Controller
     public function actionExport()
     {
         $sql = "SELECT * FROM `data`";
+
         $records = Yii::$app->db->createCommand($sql)->queryAll();
 
         $data = [];
